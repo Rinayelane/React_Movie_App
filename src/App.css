@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 1%;
+}
+.MovieList{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav{
+  margin-bottom: 20px;
+}
+.item{
+  text-overflow: ellipsis;
+  overflow: hidden;
+ white-space: nowrap;
+}
+.movie{
+  box-shadow: 0px 0px 10px 2px;
+}
+.DetailContainer{
+  
+  text-align: start;
+}
+.btn1{
+  background-color: rgba(128, 128, 128, 0.276);
+  border: none;
+}
