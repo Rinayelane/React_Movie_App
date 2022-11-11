@@ -14,7 +14,7 @@ function App() {
     if(text==='')
     {
       axios
-      .get(`http://www.omdbapi.com/?s=movie&apikey=756d4f94`)
+      .get(`https://www.omdbapi.com/?s=movie&apikey=756d4f94`)
       .then((response) => {
         console.log(response);
         setmovie(response.data.Search);
@@ -28,7 +28,7 @@ function App() {
   const getMovie = (e) => {
     e.preventDefault();
     axios
-      .get(`http://www.omdbapi.com/?s=${text}&apikey=756d4f94`)
+      .get(`https://www.omdbapi.com/?s=${text}&apikey=756d4f94`)
       .then((response) => {
         console.log(response);
         setmovie(response.data.Search);
