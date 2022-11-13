@@ -40,7 +40,7 @@ function App() {
       <nav className="navbar navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand">
-            <i class="bi bi-film"></i> React Movies App
+            <i className="bi bi-film"></i> React Movies App
           </a>
           <form className="d-flex" role="search" onSubmit={getMovie}>
             <input

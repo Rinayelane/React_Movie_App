@@ -6,8 +6,8 @@ function MovieInfoComponent(props) {
   const [text, setText] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`http://www.omdbapi.com/?i=${props.selectMovie}&apikey=756d4f94`)
+     axios
+      .get(`https://www.omdbapi.com/?i=${props.selectMovie}&apikey=756d4f94`)
       .then((response) => {
         setText(response.data);
       });
@@ -16,7 +16,7 @@ function MovieInfoComponent(props) {
   return (
     <div className="items">
       <div className="ImgContainer">
-        <img src={text.Poster} alt="hibdib" />
+        <img src={text.Poster} alt="Movie" />
       </div>
       <div className="DetailContainer">
         <h2>Movie : {text.Title}</h2>
@@ -61,29 +61,3 @@ function MovieInfoComponent(props) {
 }
 
 export default MovieInfoComponent;
-
-/* Actors
-Rated: 'PG-13', Released: '02 May 2008'
-: 
-"Robert Downey Jr., Gwyneth Paltrow, Terrence Howard"
-Awards
-: 
-"Nominated for 2 Oscars. 21 wins & 73 nominations total"
-BoxOffice
-: 
-"$319,034,126"
-Country
-: 
-"United States, Canada"
-DVD
-: 
-"30 Sep 2008"
-Director
-: 
-"Jon Favreau"
-Genre
-: 
-"Action, Adventure, Sci-Fi"
-Language
-: 
-"English, Persian, Urdu, Arabic, Kurdish, Hindi, Hungarian" */
